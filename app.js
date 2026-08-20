@@ -20,7 +20,15 @@ const renderBracket = () => {
     </section>`).join('');
   const final = tournamentData.rounds.at(-1);
   const finalStage = `<section class="playoff-round playoff-round-4 final-stage"><header><h3>${final.title}</h3><span>${final.format}</span></header><div class="playoff-matches">${final.matches.map(match => matchMarkup(match, 4)).join('')}</div><section class="third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section></section>`;
-  document.querySelector('#bracket-content').innerHTML = `${preliminaryStages}${finalStage}`;
+  const sourceCenters = Array.from({ length: 8 }, (_, index) => 66 + index * 126);
+  const quarterCenters = Array.from({ length: 4 }, (_, index) => 129 + index * 252);
+  const semiCenters = [255, 759];
+  const sourceLines = sourceCenters.map(y => `<path d="M 34 ${y} H 36" />`).join('');
+  const quarterLines = quarterCenters.map((y, index) => `<path d="M 52 ${sourceCenters[index * 2]} H 53 V ${y} H 54 M 52 ${sourceCenters[index * 2 + 1]} H 53" />`).join('');
+  const semiLines = semiCenters.map((y, index) => `<path d="M 67 ${quarterCenters[index * 2]} H 68 V ${y} H 69 M 67 ${quarterCenters[index * 2 + 1]} H 68" />`).join('');
+  const finalLines = `<path d="M 82 ${semiCenters[0]} H 83 V 507 H 84 M 82 ${semiCenters[1]} H 83" /><path class="third-line" d="M 92 577 V 710" />`;
+  const lines = `<svg class="bracket-lines" viewBox="0 0 100 1020" preserveAspectRatio="none" aria-hidden="true">${sourceLines}${quarterLines}${semiLines}${finalLines}</svg>`;
+  document.querySelector('#bracket-content').innerHTML = `${lines}${preliminaryStages}${finalStage}`;
 };
 
 const renderRanking = () => {

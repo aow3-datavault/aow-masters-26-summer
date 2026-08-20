@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1114" />
+    <title>Art of War Masters '26 Summer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Art of War Masters '26 Summer">
+        <span class="brand-aow">ART OF WAR</span>
+        <span class="brand-masters">MASTERS <b>'26</b></span>
+      </a>
+      <nav aria-label="Навигация по странице">
+        <a href="#bracket">Сетка</a>
+        <a href="#ranking">Кланы</a>
+        <a href="#rules">Правила</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Летний сезон · 1vs1</p>
+          <h1 id="page-title">ART OF WAR<br /><span>MASTERS '26</span> <em>SUMMER</em></h1>
+          <p class="hero-description">32 сильнейших командира. Один титул. Следи за ходом основного этапа и клановой гонкой в реальном времени.</p>
+          <div class="hero-details">
+            <div><strong>32</strong><span>участника</span></div>
+            <div><strong>1vs1</strong><span>основной этап</span></div>
+            <div><strong>BO3</strong><span>полуфинал и финал</span></div>
+          </div>
+          <a class="primary-action" href="#bracket">Открыть сетку <span>↓</span></a>
+        </div>
+        <div class="hero-stamp" aria-hidden="true"><span>ART OF WAR</span><strong>MASTERS</strong><b>SUMMER<br />2026</b></div>
+      </section>
+
+      <section class="section bracket-section" id="bracket" aria-labelledby="bracket-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Основной этап</p>
+            <h2 id="bracket-title">Турнирная сетка</h2>
+          </div>
+          <p class="stage-note">Карточки матчей и ссылки на трансляции обновляются организаторами.</p>
+        </div>
+        <div class="bracket-viewport">
+          <div class="bracket" id="bracket-content" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section ranking-layout" id="ranking" aria-labelledby="ranking-title">
+        <div class="ranking-main">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Гонка сообществ</p>
+              <h2 id="ranking-title">Клановый рейтинг</h2>
+            </div>
+            <p class="stage-note">В зачёт идут три лучших результата каждого клана.</p>
+          </div>
+          <div class="ranking-table" id="ranking-content" aria-live="polite"></div>
+        </div>
+        <aside class="points-card" aria-labelledby="points-title">
+          <p class="eyebrow">Система очков</p>
+          <h3 id="points-title">Каждая стадия имеет вес</h3>
+          <div id="points-content"></div>
+          <p class="points-footnote">Отборочный этап не приносит клановых очков.</p>
+        </aside>
+      </section>
+
+      <section class="section rules-section" id="rules" aria-labelledby="rules-title">
+        <div class="section-heading"><div><p class="eyebrow">Регламент</p><h2 id="rules-title">Как проходит Masters</h2></div></div>
+        <div class="rules-grid">
+          <article><span class="rule-number">01</span><h3>Основной этап</h3><p>32 участника начинают путь с 1/16 финала. До полуфиналов матчи проходят в формате BO1.</p></article>
+          <article><span class="rule-number">02</span><h3>Финальные матчи</h3><p>Полуфиналы и финал играются в BO3. Матч за третье место проводится в формате BO1.</p></article>
+          <article><span class="rule-number">03</span><h3>Кланы</h3><p>Клан игрока фиксируется перед стартом основного этапа. Результат остаётся за ним даже при переходе игрока.</p></article>
+          <article><span class="rule-number">04</span><h3>Приглашения</h3><p>Два клана-финалиста прошлого сезона получают по одному прямому приглашению и выбирают представителя сами.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer><span>ART OF WAR 3: GLOBAL CONFLICT</span><p>Art of War Masters '26 Summer · Community tournament</p></footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

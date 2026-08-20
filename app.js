@@ -1,25 +1,26 @@
 const avatarUrl = (value, background = '16363a') => `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(value)}&backgroundColor=${background}&fontFamily=Arial&fontSize=38`;
 
-const playerMarkup = (player, score = '') => {
-  if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">Ожидается</span><span class="score"></span></div>`;
-  return `<div class="player"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><span class="score">${score}</span></div>`;
+const playerMarkup = player => {
+  if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">Ожидается</span></div>`;
+  return `<div class="player"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span></div>`;
 };
 
 const matchMarkup = (match, roundIndex) => {
   const isFirst = roundIndex === 0;
   const players = match ? [tournamentData.players[match[0]], tournamentData.players[match[1]]] : [null, null];
   const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span>LIVE</span>${match[3]}</a>` : '';
-  return `<article class="match ${isFirst ? 'qualifying-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
+  return `<article class="match ${isFirst ? 'qualifying-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}<span class="match-score">0:0</span>${stream}</article>`;
 };
 
 const renderBracket = () => {
-  const stages = tournamentData.rounds.map((round, index) => `
+  const preliminaryStages = tournamentData.rounds.slice(0, -1).map((round, index) => `
     <section class="playoff-round playoff-round-${index}">
       <header><h3>${round.title}</h3><span>${round.format}</span></header>
       <div class="playoff-matches">${round.matches.map(match => matchMarkup(match, index)).join('')}</div>
     </section>`).join('');
-  const third = `<section class="playoff-round third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section>`;
-  document.querySelector('#bracket-content').innerHTML = `${stages}${third}`;
+  const final = tournamentData.rounds.at(-1);
+  const finalStage = `<section class="playoff-round playoff-round-4 final-stage"><header><h3>${final.title}</h3><span>${final.format}</span></header><div class="playoff-matches">${final.matches.map(match => matchMarkup(match, 4)).join('')}</div><section class="third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section></section>`;
+  document.querySelector('#bracket-content').innerHTML = `${preliminaryStages}${finalStage}`;
 };
 
 const renderRanking = () => {

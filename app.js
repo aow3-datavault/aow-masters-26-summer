@@ -13,14 +13,10 @@ const matchMarkup = (match, roundIndex) => {
 };
 
 const renderBracket = () => {
-  const [qualifying, ...playoffRounds] = tournamentData.rounds;
-  document.querySelector('#qualifying-content').innerHTML = `
-    <header class="stage-header"><h3>${qualifying.title}</h3><span>${qualifying.format}</span></header>
-    <div class="qualifying-matches">${qualifying.matches.map(match => matchMarkup(match, 0)).join('')}</div>`;
-  const stages = playoffRounds.map((round, index) => `
+  const stages = tournamentData.rounds.map((round, index) => `
     <section class="playoff-round playoff-round-${index}">
       <header><h3>${round.title}</h3><span>${round.format}</span></header>
-      <div class="playoff-matches">${round.matches.map(match => matchMarkup(match, index + 1)).join('')}</div>
+      <div class="playoff-matches">${round.matches.map(match => matchMarkup(match, index)).join('')}</div>
     </section>`).join('');
   const third = `<section class="playoff-round third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section>`;
   document.querySelector('#bracket-content').innerHTML = `${stages}${third}`;

@@ -9,16 +9,20 @@ const matchMarkup = (match, roundIndex) => {
   const isFirst = roundIndex === 0;
   const players = match ? [tournamentData.players[match[0]], tournamentData.players[match[1]]] : [null, null];
   const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span>LIVE</span>${match[3]}</a>` : '';
-  return `<article class="match ${isFirst ? 'first-round-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
+  return `<article class="match ${isFirst ? 'qualifying-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
 };
 
 const renderBracket = () => {
-  const stages = tournamentData.rounds.map((round, index) => `
-    <section class="round round-${index}">
+  const [qualifying, ...playoffRounds] = tournamentData.rounds;
+  document.querySelector('#qualifying-content').innerHTML = `
+    <header class="stage-header"><h3>${qualifying.title}</h3><span>${qualifying.format}</span></header>
+    <div class="qualifying-matches">${qualifying.matches.map(match => matchMarkup(match, 0)).join('')}</div>`;
+  const stages = playoffRounds.map((round, index) => `
+    <section class="playoff-round playoff-round-${index}">
       <header><h3>${round.title}</h3><span>${round.format}</span></header>
-      <div class="matches">${round.matches.map(match => matchMarkup(match, index)).join('')}</div>
+      <div class="playoff-matches">${round.matches.map(match => matchMarkup(match, index + 1)).join('')}</div>
     </section>`).join('');
-  const third = `<section class="round third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="matches">${matchMarkup(null, 4)}</div></section>`;
+  const third = `<section class="playoff-round third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section>`;
   document.querySelector('#bracket-content').innerHTML = `${stages}${third}`;
 };
 

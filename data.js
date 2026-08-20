@@ -11,14 +11,14 @@ const tournamentData = {
   ].map(([name, clan]) => ({ name, clan })),
   rounds: [
     { title: '1/16 финала', format: 'BO1', matches: [
-      [0, 1, 'https://twitch.tv/', 'Partner One'], [2, 3, 'https://twitch.tv/', 'Partner Two'],
-      [4, 5, 'https://youtube.com/', 'Partner Three'], [6, 7, 'https://twitch.tv/', 'Partner Four'],
-      [8, 9, 'https://youtube.com/', 'Partner Five'], [10, 11, 'https://twitch.tv/', 'Partner Six'],
-      [12, 13, 'https://youtube.com/', 'Partner Seven'], [14, 15, 'https://twitch.tv/', 'Partner Eight'],
-      [16, 17, 'https://youtube.com/', 'Partner Nine'], [18, 19, 'https://twitch.tv/', 'Partner Ten'],
-      [20, 21, 'https://youtube.com/', 'Partner Eleven'], [22, 23, 'https://twitch.tv/', 'Partner Twelve'],
-      [24, 25, 'https://youtube.com/', 'Partner Thirteen'], [26, 27, 'https://twitch.tv/', 'Partner Fourteen'],
-      [28, 29, 'https://youtube.com/', 'Partner Fifteen'], [30, 31, 'https://twitch.tv/', 'Partner Sixteen']
+      [0, 1, 'https://twitch.tv/', 'Stream One'], [2, 3, 'https://twitch.tv/', 'Stream Two'],
+      [4, 5, 'https://youtube.com/', 'Stream Three'], [6, 7, 'https://twitch.tv/', 'Stream Four'],
+      [8, 9, 'https://youtube.com/', 'Stream Five'], [10, 11, 'https://twitch.tv/', 'Stream Six'],
+      [12, 13, 'https://youtube.com/', 'Stream Seven'], [14, 15, 'https://twitch.tv/', 'Stream Eight'],
+      [16, 17, 'https://youtube.com/', 'Stream Nine'], [18, 19, 'https://twitch.tv/', 'Stream Ten'],
+      [20, 21, 'https://youtube.com/', 'Stream Eleven'], [22, 23, 'https://twitch.tv/', 'Stream Twelve'],
+      [24, 25, 'https://youtube.com/', 'Stream Thirteen'], [26, 27, 'https://twitch.tv/', 'Stream Fourteen'],
+      [28, 29, 'https://youtube.com/', 'Stream Fifteen'], [30, 31, 'https://twitch.tv/', 'Stream Sixteen']
     ] },
     { title: '1/8 финала', format: 'BO1', matches: Array(8).fill(null) },
     { title: '1/4 финала', format: 'BO1', matches: Array(4).fill(null) },

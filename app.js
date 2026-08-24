@@ -5,11 +5,13 @@ const playerMarkup = player => {
   return `<div class="player"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">0</b></div>`;
 };
 
+const participant = value => typeof value === 'number' ? tournamentData.players[value] : value;
+
 const matchMarkup = (match, roundIndex) => {
   const isFirst = roundIndex === 0;
-  const players = match ? [tournamentData.players[match[0]], tournamentData.players[match[1]]] : [null, null];
+  const players = match ? [participant(match[0]), participant(match[1])] : [null, null];
   const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span>LIVE</span>${match[3]}</a>` : '';
-  return `<article class="match ${isFirst ? 'qualifying-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
+  return `<article class="match ${isFirst ? 'qualifying-match ' : ''}${stream ? 'has-stream' : 'no-stream'}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
 };
 
 const renderBracket = () => {
@@ -23,10 +25,10 @@ const renderBracket = () => {
   const sourceCenters = Array.from({ length: 8 }, (_, index) => 66 + index * 126);
   const quarterCenters = Array.from({ length: 4 }, (_, index) => 129 + index * 252);
   const semiCenters = [255, 759];
-  const sourceLines = sourceCenters.map(y => `<path d="M 32 ${y} H 36" />`).join('');
-  const quarterLines = quarterCenters.map((y, index) => `<path d="M 51 ${sourceCenters[index * 2]} H 52 V ${y} H 54 M 51 ${sourceCenters[index * 2 + 1]} H 52" />`).join('');
-  const semiLines = semiCenters.map((y, index) => `<path d="M 68 ${quarterCenters[index * 2]} H 69 V ${y} H 71 M 68 ${quarterCenters[index * 2 + 1]} H 69" />`).join('');
-  const finalLines = `<path d="M 86 ${semiCenters[0]} H 87 V 507 H 89 M 86 ${semiCenters[1]} H 87" /><path class="third-line" d="M 94 577 V 710" />`;
+  const sourceLines = sourceCenters.map(y => `<path d="M 32.6 ${y} H 35.8" />`).join('');
+  const quarterLines = quarterCenters.map((y, index) => `<path d="M 50.8 ${sourceCenters[index * 2]} H 52.1 V ${y} H 53.4 M 50.8 ${sourceCenters[index * 2 + 1]} H 52.1" />`).join('');
+  const semiLines = semiCenters.map((y, index) => `<path d="M 68.4 ${quarterCenters[index * 2]} H 69.7 V ${y} H 71.1 M 68.4 ${quarterCenters[index * 2 + 1]} H 69.7" />`).join('');
+  const finalLines = `<path d="M 86.1 ${semiCenters[0]} H 87.4 V 507 H 88.7 M 86.1 ${semiCenters[1]} H 87.4" />`;
   const lines = `<svg class="bracket-lines" viewBox="0 0 100 1020" preserveAspectRatio="none" aria-hidden="true">${sourceLines}${quarterLines}${semiLines}${finalLines}</svg>`;
   document.querySelector('#bracket-content').innerHTML = `${lines}${preliminaryStages}${finalStage}`;
 };

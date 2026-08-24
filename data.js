@@ -1,13 +1,21 @@
 const tournamentData = {
   players: [
-    ['Northwind', 'VANGUARD'], ['Maximuss', 'VANGUARD'], ['DarkEagle', 'IRON LEGION'], ['Kira', 'IRON LEGION'],
-    ['Nexus', 'ECLIPSE'], ['Raven', 'ECLIPSE'], ['FrostByte', 'NORTH'], ['Vortex', 'NORTH'],
-    ['Dominator', 'TITANS'], ['Cobra', 'TITANS'], ['Phantom', 'RED LINE'], ['Alisa', 'RED LINE'],
-    ['SteelRain', 'WOLFPACK'], ['Vector', 'WOLFPACK'], ['ArcticFox', 'POLARIS'], ['Raptor', 'POLARIS'],
-    ['Solaris', 'SUNSTRIKE'], ['Titan', 'SUNSTRIKE'], ['Mirage', 'MERCENARY'], ['Crusader', 'MERCENARY'],
-    ['Nightmare', 'BLACKOUT'], ['Havoc', 'BLACKOUT'], ['Fury', 'STORM'], ['Blitz', 'STORM'],
-    ['Helios', 'ORBITAL'], ['Nomad', 'ORBITAL'], ['Berserk', 'RAIDERS'], ['Viper', 'RAIDERS'],
-    ['Sentinel', 'AEGIS'], ['Astra', 'AEGIS'], ['Ghost', 'SHADOW'], ['Nova', 'SHADOW']
+    ['Hero Dominator', 'Call Me God'], ['Y6uBaIIIkA_', '_-KRSK-_'],
+    ['VT_TaptapBoi C', '-V.E.R.T.E.X-'], ['Amaan6', 'The lion heart'],
+    ['Supreme Deadass', '!SUPREME_WARRIORS!'], ['PiscesBrain YT', '_.--! Q.A.D !--._'],
+    ['General-Hassan.AS7', '120 FPS'], ['Monirul', 'R-U-SS-K-I-E'],
+    ['Koroleva Zadrot', 'Forge of Souls'], ['White Pigeon', 'Utility Pigeon'],
+    ['VANGUARD TEAM', 'Peace for everyone'], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-'],
+    ['Mosina', 'KTO_ESLI_NE_MI'], ['colver_1672142468', 'Russian princes'],
+    ['Tairitsu', 'Tianya Alliance'], ['Dr__Ahmad', 'VIP999999999999999'],
+    ['!VOlCAN!', '-!-SUNRISE-!-'], ['DAUD_77', 'BENZIN'],
+    ['Guten tag', '-BATKEN-'], ['Vincenzo_1999', 'FREEDOM.113'],
+    ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.'], ['ACCPHU.RELAXWITHME', 'CAOTHU-!-CAOCAOTHU'],
+    ['ALTAIR_SON_OF_DARK', '_THE_KONFA_'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.'],
+    ['condantoico', 'sakasi997'], ['Yamito012 R', '-True Freedom-'],
+    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_'], ['kinghall', 'kings Empire'],
+    ['DuskWell-Shark', '-EAGLES-'], ['VOIN--01', 'PARNI IZ STALI'],
+    ['for a good world', 'HELLAS ELITE'], ['Real Cat God', 'yuanshen']
   ].map(([name, clan]) => ({ name, clan })),
   rounds: [
     { title: '1/16 финала', format: 'BO1', matches: [
@@ -27,11 +35,23 @@ const tournamentData = {
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
   ranking: [
-    ['VANGUARD', 0, ['Northwind', 'Maximuss']], ['IRON LEGION', 0, ['DarkEagle', 'Kira']],
-    ['ECLIPSE', 0, ['Nexus', 'Raven']], ['NORTH', 0, ['FrostByte', 'Vortex']],
-    ['TITANS', 0, ['Dominator', 'Cobra']], ['RED LINE', 0, ['Phantom', 'Alisa']],
-    ['WOLFPACK', 0, ['SteelRain', 'Vector']], ['POLARIS', 0, ['ArcticFox', 'Raptor']]
-  ].map(([clan, points, players]) => ({ clan, points, players })),
+    ['Call Me God', 'Hero Dominator'], ['_-KRSK-_', 'Y6uBaIIIkA_'],
+    ['-V.E.R.T.E.X-', 'VT_TaptapBoi C'], ['The lion heart', 'Amaan6'],
+    ['!SUPREME_WARRIORS!', 'Supreme Deadass'], ['_.--! Q.A.D !--._', 'PiscesBrain YT'],
+    ['120 FPS', 'General-Hassan.AS7'], ['R-U-SS-K-I-E', 'Monirul'],
+    ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
+    ['Peace for everyone', 'VANGUARD TEAM'], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
+    ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468'],
+    ['Tianya Alliance', 'Tairitsu'], ['VIP999999999999999', 'Dr__Ahmad'],
+    ['-!-SUNRISE-!-', '!VOlCAN!'], ['BENZIN', 'DAUD_77'],
+    ['-BATKEN-', 'Guten tag'], ['FREEDOM.113', 'Vincenzo_1999'],
+    ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER'], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME'],
+    ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK'], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
+    ['sakasi997', 'condantoico'], ['-True Freedom-', 'Yamito012 R'],
+    ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'], ['kings Empire', 'kinghall'],
+    ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01'],
+    ['HELLAS ELITE', 'for a good world'], ['yuanshen', 'Real Cat God']
+  ].map(([clan, player]) => ({ clan, points: 0, players: [player] })),
   points: [
     ['1-е место', 16], ['2-е место', 12], ['3-е место', 9], ['4-е место', 7],
     ['Вылет в 1/4', 4], ['Вылет в 1/8', 2], ['Вылет в 1/16', 1]

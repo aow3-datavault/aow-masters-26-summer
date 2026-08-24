@@ -1,15 +1,15 @@
 const avatarUrl = (value, background = '16363a') => `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(value)}&backgroundColor=${background}&fontFamily=Arial&fontSize=38`;
 
 const playerMarkup = player => {
-  if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">Ожидается</span></div>`;
-  return `<div class="player"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span></div>`;
+  if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">Ожидается</span><b class="player-score">0</b></div>`;
+  return `<div class="player"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">0</b></div>`;
 };
 
 const matchMarkup = (match, roundIndex) => {
   const isFirst = roundIndex === 0;
   const players = match ? [tournamentData.players[match[0]], tournamentData.players[match[1]]] : [null, null];
   const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span>LIVE</span>${match[3]}</a>` : '';
-  return `<article class="match ${isFirst ? 'qualifying-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}<span class="match-score">0:0</span>${stream}</article>`;
+  return `<article class="match ${isFirst ? 'qualifying-match' : ''}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
 };
 
 const renderBracket = () => {
@@ -23,10 +23,10 @@ const renderBracket = () => {
   const sourceCenters = Array.from({ length: 8 }, (_, index) => 66 + index * 126);
   const quarterCenters = Array.from({ length: 4 }, (_, index) => 129 + index * 252);
   const semiCenters = [255, 759];
-  const sourceLines = sourceCenters.map(y => `<path d="M 34 ${y} H 36" />`).join('');
-  const quarterLines = quarterCenters.map((y, index) => `<path d="M 52 ${sourceCenters[index * 2]} H 53 V ${y} H 54 M 52 ${sourceCenters[index * 2 + 1]} H 53" />`).join('');
-  const semiLines = semiCenters.map((y, index) => `<path d="M 67 ${quarterCenters[index * 2]} H 68 V ${y} H 69 M 67 ${quarterCenters[index * 2 + 1]} H 68" />`).join('');
-  const finalLines = `<path d="M 82 ${semiCenters[0]} H 83 V 507 H 84 M 82 ${semiCenters[1]} H 83" /><path class="third-line" d="M 92 577 V 710" />`;
+  const sourceLines = sourceCenters.map(y => `<path d="M 32 ${y} H 36" />`).join('');
+  const quarterLines = quarterCenters.map((y, index) => `<path d="M 51 ${sourceCenters[index * 2]} H 52 V ${y} H 54 M 51 ${sourceCenters[index * 2 + 1]} H 52" />`).join('');
+  const semiLines = semiCenters.map((y, index) => `<path d="M 68 ${quarterCenters[index * 2]} H 69 V ${y} H 71 M 68 ${quarterCenters[index * 2 + 1]} H 69" />`).join('');
+  const finalLines = `<path d="M 86 ${semiCenters[0]} H 87 V 507 H 89 M 86 ${semiCenters[1]} H 87" /><path class="third-line" d="M 94 577 V 710" />`;
   const lines = `<svg class="bracket-lines" viewBox="0 0 100 1020" preserveAspectRatio="none" aria-hidden="true">${sourceLines}${quarterLines}${semiLines}${finalLines}</svg>`;
   document.querySelector('#bracket-content').innerHTML = `${lines}${preliminaryStages}${finalStage}`;
 };

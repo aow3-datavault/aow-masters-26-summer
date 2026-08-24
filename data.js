@@ -1,21 +1,21 @@
 const tournamentData = {
   players: [
-    ['Hero Dominator', 'Call Me God', 'confederation'], ['Y6uBaIIIkA_', '_-KRSK-_', 'resistance'],
-    ['VT_TaptapBoi C', '-V.E.R.T.E.X-', 'confederation'], ['Amaan6', 'The lion heart', 'resistance'],
-    ['Supreme Deadass', '!SUPREME_WARRIORS!', 'confederation'], ['PiscesBrain YT', '_.--! Q.A.D !--._', 'resistance'],
-    ['General-Hassan.AS7', '120 FPS', 'confederation'], ['Monirul', 'R-U-SS-K-I-E', 'resistance'],
-    ['Koroleva Zadrot', 'Forge of Souls', 'confederation'], ['White Pigeon', 'Utility Pigeon', 'resistance'],
-    ['VANGUARD TEAM', 'Peace for everyone', 'confederation'], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-', 'resistance'],
-    ['Mosina', 'KTO_ESLI_NE_MI', 'confederation'], ['colver_1672142468', 'Russian princes', 'resistance'],
-    ['Tairitsu', 'Tianya Alliance', 'confederation'], ['Dr__Ahmad', 'VIP999999999999999', 'resistance'],
-    ['!VOlCAN!', '-!-SUNRISE-!-', 'confederation'], ['DAUD_77', 'BENZIN', 'resistance'],
-    ['Guten tag', '-BATKEN-', 'confederation'], ['Vincenzo_1999', 'FREEDOM.113', 'resistance'],
-    ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.', 'confederation'], ['ACCPHU.RELAXWITHME', 'CAOTHU-!-CAOCAOTHU', 'resistance'],
-    ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.', 'resistance'],
-    ['condantoico', 'sakasi997', 'confederation'], ['Yamito012 R', '-True Freedom-', 'resistance'],
-    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['kinghall', '', 'resistance'],
-    ['DuskWell-Shark', '-EAGLES-', 'confederation'], ['VOIN--01', 'PARNI IZ STALI', 'resistance'],
-    ['for a good world', 'HELLAS ELITE', 'confederation'], ['Real Cat God', 'yuanshen', 'resistance']
+    ['Hero Dominator', 'Call Me God', 'confederation'], ['Dr__Ahmad', 'VIP999999999999999', 'resistance'],
+    ['VT_TaptapBoi C', '-V.E.R.T.E.X-', 'confederation'], ['White Pigeon', 'Utility Pigeon', 'resistance'],
+    ['Supreme Deadass', '!SUPREME_WARRIORS!', 'confederation'], ['DAUD_77', 'BENZIN', 'resistance'],
+    ['General-Hassan.AS7', '120 FPS', 'confederation'], ['Yamito012 R', '-True Freedom-', 'resistance'],
+    ['Koroleva Zadrot', 'Forge of Souls', 'confederation'], ['Amaan6', 'The lion heart', 'resistance'],
+    ['VANGUARD TEAM', 'Peace for everyone', 'confederation'], ['Real Cat God', 'yuanshen', 'resistance'],
+    ['Mosina', 'KTO_ESLI_NE_MI', 'confederation'], ['Monirul', 'R-U-SS-K-I-E', 'resistance'],
+    ['Tairitsu', 'Tianya Alliance', 'confederation'], ['kinghall', '', 'resistance'],
+    ['!VOlCAN!', '-!-SUNRISE-!-', 'confederation'], ['colver_1672142468', 'Russian princes', 'resistance'],
+    ['Guten tag', '-BATKEN-', 'confederation'], ['PiscesBrain YT', '_.--! Q.A.D !--._', 'resistance'],
+    ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.', 'confederation'], ['VOIN--01', 'PARNI IZ STALI', 'resistance'],
+    ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation'], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-', 'resistance'],
+    ['condantoico', 'sakasi997', 'confederation'], ['Vincenzo_1999', 'FREEDOM.113', 'resistance'],
+    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['Y6uBaIIIkA_', '_-KRSK-_', 'resistance'],
+    ['DuskWell-Shark', '-EAGLES-', 'confederation'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.', 'resistance'],
+    ['for a good world', 'HELLAS ELITE', 'confederation'], ['ACCPHU.RELAXWITHME', 'CAOTHU-!-CAOCAOTHU', 'resistance']
   ].map(([name, clan, faction]) => ({ name, clan, faction })),
   rounds: [
     { title: '1/16 финала', format: 'BO1', matches: [

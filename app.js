@@ -1,7 +1,18 @@
+const translations = {
+  ru: {
+    navigationLabel: 'Навигация по странице', languageLabel: 'Язык', navBracket: 'Сетка', navRanking: 'Кланы', mainStage: 'Основной этап', bracketTitle: 'Турнирная сетка', bracketLabel: 'Турнирная сетка. На мобильном листайте вправо между стадиями.', bracketHint: 'Листайте вправо между стадиями плей-офф', rankingTitle: 'Клановый рейтинг', rankingNote: 'В зачёт идут три лучших результата каждого клана.', pointsSystem: 'Система очков', pointsTitle: 'Сколько очков приносят клану игроки?', pointsFootnote: 'Отборочный этап не приносит клановых очков.', footer: "Art of War Masters '26 Summer · Community tournament", waiting: 'Ожидается', rankingHeaders: ['#', 'Клан', 'Лучшие представители', 'Очки'], rounds: { '1/16 финала': '1/16 финала', '1/8 финала': '1/8 финала', '1/4 финала': '1/4 финала', 'Полуфинал': 'Полуфинал', 'Финал': 'Финал', 'Матч за 3-е место': 'Матч за 3-е место' }, points: { '1-е место': '1-е место', '2-е место': '2-е место', '3-е место': '3-е место', '4-е место': '4-е место', 'Вылет в 1/4': 'Вылет в 1/4', 'Вылет в 1/8': 'Вылет в 1/8', 'Вылет в 1/16': 'Вылет в 1/16' }
+  },
+  en: {
+    navigationLabel: 'Page navigation', languageLabel: 'Language', navBracket: 'Bracket', navRanking: 'Clans', mainStage: 'Main stage', bracketTitle: 'Tournament bracket', bracketLabel: 'Tournament bracket. On mobile, swipe right between stages.', bracketHint: 'Swipe right between playoff stages', rankingTitle: 'Clan ranking', rankingNote: 'Each clan receives points from its three best results.', pointsSystem: 'Points system', pointsTitle: 'How many points do players bring to their clan?', pointsFootnote: 'The qualifying stage awards no clan points.', footer: "Art of War Masters '26 Summer · Community tournament", waiting: 'Awaiting players', rankingHeaders: ['#', 'Clan', 'Top representatives', 'Points'], rounds: { '1/16 финала': 'Round of 32', '1/8 финала': 'Round of 16', '1/4 финала': 'Quarterfinal', 'Полуфинал': 'Semifinal', 'Финал': 'Final', 'Матч за 3-е место': 'Third-place match' }, points: { '1-е место': '1st place', '2-е место': '2nd place', '3-е место': '3rd place', '4-е место': '4th place', 'Вылет в 1/4': 'Eliminated in quarterfinal', 'Вылет в 1/8': 'Eliminated in round of 16', 'Вылет в 1/16': 'Eliminated in round of 32' }
+  }
+};
+
 const avatarUrl = (value, background = '16363a') => `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(value)}&backgroundColor=${background}&fontFamily=Arial&fontSize=38`;
+let language = 'ru';
+let t = translations[language];
 
 const playerMarkup = player => {
-  if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">Ожидается</span><b class="player-score">0</b></div>`;
+  if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">${t.waiting}</span><b class="player-score">0</b></div>`;
   return `<div class="player"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">0</b></div>`;
 };
 
@@ -17,11 +28,11 @@ const matchMarkup = (match, roundIndex) => {
 const renderBracket = () => {
   const preliminaryStages = tournamentData.rounds.slice(0, -1).map((round, index) => `
     <section class="playoff-round playoff-round-${index}">
-      <header><h3>${round.title}</h3><span>${round.format}</span></header>
+      <header><h3>${t.rounds[round.title]}</h3><span>${round.format}</span></header>
       <div class="playoff-matches">${round.matches.map(match => matchMarkup(match, index)).join('')}</div>
     </section>`).join('');
   const final = tournamentData.rounds.at(-1);
-  const finalStage = `<section class="playoff-round playoff-round-4 final-stage"><header><h3>${final.title}</h3><span>${final.format}</span></header><div class="playoff-matches">${final.matches.map(match => matchMarkup(match, 4)).join('')}</div><section class="third-place"><header><h3>${tournamentData.thirdPlace.title}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section></section>`;
+  const finalStage = `<section class="playoff-round playoff-round-4 final-stage"><header><h3>${t.rounds[final.title]}</h3><span>${final.format}</span></header><div class="playoff-matches">${final.matches.map(match => matchMarkup(match, 4)).join('')}</div><section class="third-place"><header><h3>${t.rounds[tournamentData.thirdPlace.title]}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section></section>`;
   const sourceCenters = Array.from({ length: 8 }, (_, index) => 66 + index * 126);
   const quarterCenters = Array.from({ length: 4 }, (_, index) => 129 + index * 252);
   const semiCenters = [255, 759];
@@ -35,15 +46,44 @@ const renderBracket = () => {
 
 const renderRanking = () => {
   document.querySelector('#ranking-content').innerHTML = `
-    <div class="ranking-head"><span>#</span><span>Клан</span><span>Лучшие представители</span><span>Очки</span></div>
+    <div class="ranking-head">${t.rankingHeaders.map(header => `<span>${header}</span>`).join('')}</div>
     ${tournamentData.ranking.map((entry, index) => `<div class="ranking-row">
       <span class="rank">${String(index + 1).padStart(2, '0')}</span>
       <span class="clan"><img src="${avatarUrl(entry.clan, '51391a')}" alt="" /><b>${entry.clan}</b></span>
       <span class="representatives">${entry.players.join(' · ')}</span>
       <strong class="clan-points">${entry.points}</strong>
     </div>`).join('')}`;
-  document.querySelector('#points-content').innerHTML = tournamentData.points.map(([label, value], index) => `<div class="point-row ${index === 0 ? 'winner-points' : ''}"><span>${label}</span><strong>${value}</strong></div>`).join('');
+  document.querySelector('#points-content').innerHTML = tournamentData.points.map(([label, value], index) => `<div class="point-row ${index === 0 ? 'winner-points' : ''}"><span>${t.points[label]}</span><strong>${value}</strong></div>`).join('');
 };
 
-renderBracket();
-renderRanking();
+const setCookie = (name, value) => document.cookie = `${name}=${value}; max-age=31536000; path=/; SameSite=Lax`;
+const getCookie = name => document.cookie.split('; ').find(cookie => cookie.startsWith(`${name}=`))?.split('=')[1];
+
+const setLanguage = value => {
+  language = value;
+  t = translations[language];
+  document.documentElement.lang = language;
+  document.querySelectorAll('[data-i18n]').forEach(element => element.textContent = t[element.dataset.i18n]);
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(element => element.setAttribute('aria-label', t[element.dataset.i18nAriaLabel]));
+  document.querySelector('#language-select').value = language;
+  renderBracket();
+  renderRanking();
+};
+
+const savedLanguage = getCookie('aow-language');
+const hasSavedLanguage = Boolean(savedLanguage && translations[savedLanguage]);
+setLanguage(hasSavedLanguage ? savedLanguage : 'ru');
+document.querySelector('#language-select').addEventListener('change', event => {
+  setLanguage(event.target.value);
+  setCookie('aow-language', event.target.value);
+});
+
+if (!hasSavedLanguage) {
+  const dialog = document.querySelector('#language-dialog');
+  dialog.hidden = false;
+  dialog.querySelectorAll('[data-language]').forEach(button => button.addEventListener('click', () => {
+    setLanguage(button.dataset.language);
+    setCookie('aow-language', button.dataset.language);
+    dialog.hidden = true;
+  }));
+}

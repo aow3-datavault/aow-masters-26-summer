@@ -12,10 +12,11 @@
       <a class="brand" href="#top" aria-label="Art of War Masters '26 Summer">
         <span>ART OF WAR MASTERS '26</span>
       </a>
-      <nav aria-label="Навигация по странице">
-        <a href="#bracket">Сетка</a>
-        <a href="#ranking">Кланы</a>
+      <nav data-i18n-aria-label="navigationLabel" aria-label="Навигация по странице">
+        <a href="#bracket" data-i18n="navBracket">Сетка</a>
+        <a href="#ranking" data-i18n="navRanking">Кланы</a>
       </nav>
+      <label class="language-switch"><span class="visually-hidden" data-i18n="languageLabel">Язык</span><select id="language-select" data-i18n-aria-label="languageLabel" aria-label="Язык"><option value="ru">RU</option><option value="en">EN</option></select></label>
     </header>
 
     <main id="top">
@@ -28,35 +29,42 @@
       <section class="section bracket-section" id="bracket" aria-labelledby="bracket-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">Основной этап</p>
-            <h2 id="bracket-title">Турнирная сетка</h2>
+            <p class="eyebrow" data-i18n="mainStage">Основной этап</p>
+            <h2 id="bracket-title" data-i18n="bracketTitle">Турнирная сетка</h2>
           </div>
         </div>
-        <div class="playoff-viewport" tabindex="0" aria-label="Турнирная сетка. На мобильном листайте вправо между стадиями.">
+        <div class="playoff-viewport" tabindex="0" data-i18n-aria-label="bracketLabel" aria-label="Турнирная сетка. На мобильном листайте вправо между стадиями.">
           <div class="playoff-bracket" id="bracket-content" aria-live="polite"></div>
         </div>
-        <p class="bracket-hint">Листайте вправо между стадиями плей-офф</p>
+        <p class="bracket-hint" data-i18n="bracketHint">Листайте вправо между стадиями плей-офф</p>
       </section>
 
       <section class="section ranking-layout" id="ranking" aria-labelledby="ranking-title">
         <div class="ranking-main">
           <div class="section-heading">
-            <div><h2 id="ranking-title">Клановый рейтинг</h2></div>
-            <p class="stage-note">В зачёт идут три лучших результата каждого клана.</p>
+            <div><h2 id="ranking-title" data-i18n="rankingTitle">Клановый рейтинг</h2></div>
+            <p class="stage-note" data-i18n="rankingNote">В зачёт идут три лучших результата каждого клана.</p>
           </div>
           <div class="ranking-table" id="ranking-content" aria-live="polite"></div>
         </div>
         <aside class="points-card" aria-labelledby="points-title">
-          <p class="eyebrow">Система очков</p>
-          <h3 id="points-title">Сколько очков приносят клану игроки?</h3>
+          <p class="eyebrow" data-i18n="pointsSystem">Система очков</p>
+          <h3 id="points-title" data-i18n="pointsTitle">Сколько очков приносят клану игроки?</h3>
           <div id="points-content"></div>
-          <p class="points-footnote">Отборочный этап не приносит клановых очков.</p>
+          <p class="points-footnote" data-i18n="pointsFootnote">Отборочный этап не приносит клановых очков.</p>
         </aside>
       </section>
 
     </main>
 
-    <footer><span>ART OF WAR 3: GLOBAL CONFLICT</span><p>Art of War Masters '26 Summer · Community tournament</p></footer>
+    <footer><span>ART OF WAR 3: GLOBAL CONFLICT</span><p data-i18n="footer">Art of War Masters '26 Summer · Community tournament</p></footer>
+    <div class="language-dialog" id="language-dialog" role="dialog" aria-modal="true" aria-labelledby="language-dialog-title" hidden>
+      <div class="language-dialog-card">
+        <p class="eyebrow" id="language-dialog-title">Choose your language</p>
+        <p>Выберите язык / Choose a language</p>
+        <div><button type="button" data-language="ru">Русский</button><button type="button" data-language="en">English</button></div>
+      </div>
+    </div>
     <script src="data.js"></script>
     <script src="app.js"></script>
   </body>

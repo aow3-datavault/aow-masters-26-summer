@@ -7,13 +7,13 @@ const translations = {
   }
 };
 
-const avatarUrl = (value, background = '16363a') => `https://api.dicebear.com/9.x/initials/svg?seed=${encodeURIComponent(value)}&backgroundColor=${background}&fontFamily=Arial&fontSize=38`;
+const iconUrl = value => `icons/${encodeURIComponent(value.replace(/\.+$/, ''))}.png`;
 let language = 'ru';
 let t = translations[language];
 
 const playerMarkup = player => {
   if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">${t.waiting}</span><b class="player-score">0</b></div>`;
-  return `<div class="player player-${player.faction}${player.isEliminated ? ' is-eliminated' : ''}"><img class="avatar" src="${avatarUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">0</b></div>`;
+  return `<div class="player player-${player.faction}${player.isEliminated ? ' is-eliminated' : ''}"><img class="avatar" src="${iconUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">0</b></div>`;
 };
 
 const participant = value => typeof value === 'number' ? tournamentData.players[value] : value;
@@ -49,7 +49,7 @@ const renderRanking = () => {
     <div class="ranking-head">${t.rankingHeaders.map(header => `<span>${header}</span>`).join('')}</div>
     ${tournamentData.ranking.map((entry, index) => `<div class="ranking-row">
       <span class="rank">${String(index + 1).padStart(2, '0')}</span>
-      <span class="clan"><img src="${avatarUrl(entry.clan, '51391a')}" alt="" /><b>${entry.clan}</b></span>
+      <span class="clan"><img src="${iconUrl(entry.clan)}" alt="" /><b>${entry.clan}</b></span>
       <span class="representatives">${entry.players.join(' · ')}</span>
       <strong class="clan-points">${entry.points}</strong>
     </div>`).join('')}`;

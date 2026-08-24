@@ -13,7 +13,7 @@ const tournamentData = {
     ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.', 'confederation'], ['VOIN--01', 'PARNI IZ STALI', 'resistance'],
     ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation'], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-', 'resistance'],
     ['condantoico', 'sakasi997', 'confederation'], ['Vincenzo_1999', 'FREEDOM.113', 'resistance'],
-    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['Y6uBaIIIkA_', '_-KRSK-_', 'resistance'],
+    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['Hexblood !!!! ha', '-VERDIKT-.', 'resistance'],
     ['DuskWell-Shark', '-EAGLES-', 'confederation'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.', 'resistance'],
     ['for a good world', 'HELLAS ELITE', 'confederation'], ['ACCPHU.RELAXWITHME', 'CAOTHU-!-CAOCAOTHU', 'resistance']
   ].map(([name, clan, faction]) => ({ name, clan, faction })),
@@ -35,7 +35,7 @@ const tournamentData = {
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
   ranking: [
-    ['Call Me God', 'Hero Dominator'], ['_-KRSK-_', 'Y6uBaIIIkA_'],
+    ['Call Me God', 'Hero Dominator'], ['-VERDIKT-.', 'Hexblood !!!! ha'],
     ['-V.E.R.T.E.X-', 'VT_TaptapBoi C'], ['The lion heart', 'Amaan6'],
     ['!SUPREME_WARRIORS!', 'Supreme Deadass'], ['_.--! Q.A.D !--._', 'PiscesBrain YT'],
     ['120 FPS', 'General-Hassan.AS7'], ['R-U-SS-K-I-E', 'Monirul'],

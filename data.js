@@ -13,7 +13,7 @@ const tournamentData = {
     ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.', 'confederation'], ['ACCPHU.RELAXWITHME', 'CAOTHU-!-CAOCAOTHU', 'resistance'],
     ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.', 'resistance'],
     ['condantoico', 'sakasi997', 'confederation'], ['Yamito012 R', '-True Freedom-', 'resistance'],
-    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['kinghall', 'kings Empire', 'resistance'],
+    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['kinghall', '', 'resistance'],
     ['DuskWell-Shark', '-EAGLES-', 'confederation'], ['VOIN--01', 'PARNI IZ STALI', 'resistance'],
     ['for a good world', 'HELLAS ELITE', 'confederation'], ['Real Cat God', 'yuanshen', 'resistance']
   ].map(([name, clan, faction]) => ({ name, clan, faction })),
@@ -48,7 +48,7 @@ const tournamentData = {
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER'], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME'],
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK'], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
     ['sakasi997', 'condantoico'], ['-True Freedom-', 'Yamito012 R'],
-    ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'], ['kings Empire', 'kinghall'],
+    ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01'],
     ['HELLAS ELITE', 'for a good world'], ['yuanshen', 'Real Cat God']
   ].map(([clan, player]) => ({ clan, points: 0, players: [player] })),

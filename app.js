@@ -26,9 +26,9 @@ const renderBracket = () => {
   const quarterCenters = Array.from({ length: 4 }, (_, index) => 129 + index * 252);
   const semiCenters = [255, 759];
   const sourceLines = sourceCenters.map(y => `<path d="M 32.6 ${y} H 35.8" />`).join('');
-  const quarterLines = quarterCenters.map((y, index) => `<path d="M 50.8 ${sourceCenters[index * 2]} H 52.1 V ${y} H 53.4 M 50.8 ${sourceCenters[index * 2 + 1]} H 52.1" />`).join('');
-  const semiLines = semiCenters.map((y, index) => `<path d="M 68.4 ${quarterCenters[index * 2]} H 69.7 V ${y} H 71.1 M 68.4 ${quarterCenters[index * 2 + 1]} H 69.7" />`).join('');
-  const finalLines = `<path d="M 86.1 ${semiCenters[0]} H 87.4 V 507 H 88.7 M 86.1 ${semiCenters[1]} H 87.4" />`;
+  const quarterLines = quarterCenters.map((y, index) => `<path d="M 50.8 ${sourceCenters[index * 2]} H 52.1 V ${y} H 53.4 M 50.8 ${sourceCenters[index * 2 + 1]} H 52.1 V ${y}" />`).join('');
+  const semiLines = semiCenters.map((y, index) => `<path d="M 68.4 ${quarterCenters[index * 2]} H 69.7 V ${y} H 71.1 M 68.4 ${quarterCenters[index * 2 + 1]} H 69.7 V ${y}" />`).join('');
+  const finalLines = `<path d="M 86.1 ${semiCenters[0]} H 87.4 V 507 H 88.7 M 86.1 ${semiCenters[1]} H 87.4 V 507" />`;
   const lines = `<svg class="bracket-lines" viewBox="0 0 100 1020" preserveAspectRatio="none" aria-hidden="true">${sourceLines}${quarterLines}${semiLines}${finalLines}</svg>`;
   document.querySelector('#bracket-content').innerHTML = `${lines}${preliminaryStages}${finalStage}`;
 };

@@ -25,7 +25,7 @@ const tournamentData = {
       [12, 13, 'https://youtube.com/', 'Stream Seven'], [14, 15, 'https://twitch.tv/', 'Stream Eight'],
       [16, 17, 'https://youtube.com/', 'Stream Nine'], [18, 19, 'https://twitch.tv/', 'Stream Ten'],
       [20, 21, 'https://youtube.com/', 'Stream Eleven'], [22, 23, 'https://twitch.tv/', 'Stream Twelve'],
-      [24, 25, 'https://youtube.com/', 'Stream Thirteen'], [26, 27, 'https://twitch.tv/', 'Stream Fourteen'],
+      [24, 25, 'https://youtube.com/', 'Stream Thirteen'], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT'],
       [28, 29, 'https://youtube.com/', 'Stream Fifteen'], [30, 31, 'https://twitch.tv/', 'Stream Sixteen']
     ] },
     { title: '1/8 финала', format: 'BO1', matches: Array(8).fill(null) },

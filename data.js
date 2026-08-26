@@ -1,6 +1,6 @@
 const tournamentData = {
   players: [
-    ['Hero Dominator', 'Call Me God', 'confederation'], ['Dr__Ahmad', 'VIP999999999999999', 'resistance'],
+    ['Hero Dominator', 'Call Me God', 'confederation'], ['-!..Zakir AFG..!-', '', 'resistance'],
     ['VT_TaptapBoi C', '-V.E.R.T.E.X-', 'confederation'], ['White Pigeon', 'Utility Pigeon', 'resistance'],
     ['Supreme Deadass', '!SUPREME_WARRIORS!', 'confederation'], ['DAUD_77', 'BENZIN', 'resistance'],
     ['General-Hassan.AS7', '120 FPS', 'confederation'], ['Yamito012 R', '-True Freedom-', 'resistance'],
@@ -42,7 +42,7 @@ const tournamentData = {
     ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
     ['Peace for everyone', 'VANGUARD TEAM'], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
     ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468'],
-    ['Tianya Alliance', 'Tairitsu'], ['VIP999999999999999', 'Dr__Ahmad'],
+    ['Tianya Alliance', 'Tairitsu'],
     ['-!-SUNRISE-!-', '!VOlCAN!'], ['BENZIN', 'DAUD_77'],
     ['-BATKEN-', 'Guten tag'], ['FREEDOM.113', 'Vincenzo_1999'],
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER'], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME'],

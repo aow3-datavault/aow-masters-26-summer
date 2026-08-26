@@ -13,7 +13,7 @@ let t = translations[language];
 
 const playerMarkup = player => {
   if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">${t.waiting}</span><b class="player-score">0</b></div>`;
-  return `<div class="player player-${player.faction}${player.isEliminated ? ' is-eliminated' : ''}"><img class="avatar" src="${iconUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">0</b></div>`;
+  return `<div class="player player-${player.faction}${player.isEliminated ? ' is-eliminated' : ''}"><img class="avatar" src="${iconUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">${player.score}</b></div>`;
 };
 
 const participant = value => typeof value === 'number' ? tournamentData.players[value] : value;

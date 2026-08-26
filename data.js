@@ -13,10 +13,10 @@ const tournamentData = {
     ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.', 'confederation'], ['VOIN--01', 'PARNI IZ STALI', 'resistance'],
     ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation'], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-', 'resistance'],
     ['condantoico', 'sakasi997', 'confederation'], ['Vincenzo_1999', 'FREEDOM.113', 'resistance'],
-    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation'], ['Hexblood !!!! ha', '-VERDIKT-.', 'resistance'],
+    ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation', 1], ['Hexblood !!!! ha', '-VERDIKT-.', 'resistance', 0, true],
     ['DuskWell-Shark', '-EAGLES-', 'confederation'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.', 'resistance'],
     ['for a good world', 'HELLAS ELITE', 'confederation'], ['ACCPHU.RELAXWITHME', 'CAOTHU-!-CAOCAOTHU', 'resistance']
-  ].map(([name, clan, faction]) => ({ name, clan, faction })),
+  ].map(([name, clan, faction, score = 0, isEliminated = false]) => ({ name, clan, faction, score, isEliminated })),
   rounds: [
     { title: '1/16 финала', format: 'BO1', matches: [
       [0, 1, 'https://twitch.tv/', 'Stream One'], [2, 3, 'https://www.youtube.com/live/Aw7cqsHh4jQ?si=ekK8VR0wev6x1NLO', 'White Pigeon vs VT_TaptapBoi C AOW3 MASTERS TOURNAMENT'],
@@ -35,7 +35,7 @@ const tournamentData = {
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
   ranking: [
-    ['Call Me God', 'Hero Dominator'], ['-VERDIKT-.', 'Hexblood !!!! ha'],
+    ['Call Me God', 'Hero Dominator'], ['-VERDIKT-.', 'Hexblood !!!! ha', 1],
     ['-V.E.R.T.E.X-', 'VT_TaptapBoi C'], ['The lion heart', 'Amaan6'],
     ['!SUPREME_WARRIORS!', 'Supreme Deadass'], ['_.--! Q.A.D !--._', 'PiscesBrain YT'],
     ['120 FPS', 'General-Hassan.AS7'], ['R-U-SS-K-I-E', 'Monirul'],
@@ -51,7 +51,7 @@ const tournamentData = {
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01'],
     ['HELLAS ELITE', 'for a good world'], ['yuanshen', 'Real Cat God']
-  ].map(([clan, player]) => ({ clan, points: 0, players: [player] })),
+  ].map(([clan, player, points = 0]) => ({ clan, points, players: [player] })),
   points: [
     ['1-е место', 16], ['2-е место', 12], ['3-е место', 9], ['4-е место', 7],
     ['Вылет в 1/4', 4], ['Вылет в 1/8', 2], ['Вылет в 1/16', 1]

@@ -11,7 +11,7 @@ const tournamentData = {
     ['!VOlCAN!', '-!-SUNRISE-!-', 'confederation'], ['colver_1672142468', 'Russian princes', 'resistance'],
     ['Guten tag', '-BATKEN-', 'confederation'], ['PiscesBrain YT', '_.--! Q.A.D !--._', 'resistance'],
     ['_D.A.R.K_HUNTER', 'RUSSIAN STEEL.', 'confederation'], ['VOIN--01', 'PARNI IZ STALI', 'resistance'],
-    ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation'], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-', 'resistance'],
+    ['ALTAIR_SON_OF_DARK', '_THE_KONFA_', 'confederation', 0, true], ["!'DOOM-BRINGER'!", '-B.E.A.S.T-', 'resistance', 1],
     ['condantoico', 'sakasi997', 'confederation'], ['Vincenzo_1999', 'FREEDOM.113', 'resistance'],
     ['DEVIL_MAY_CRY', '_RaKi-Na-KoNfE_', 'confederation', 1], ['Hexblood !!!! ha', '-VERDIKT-.', 'resistance', 0, true],
     ['DuskWell-Shark', '-EAGLES-', 'confederation'], ['-_- pathmaker', 'W.O.R.L.D.C.O.R.P.', 'resistance'],
@@ -28,7 +28,7 @@ const tournamentData = {
       [24, 25, 'https://www.youtube.com/live/vAg12-ZlgSc?si=aQqbUn4un12-8PQ1', "ART OF WAR MASTERS '26 SUMMER | Condantoica vs Vincenzo_1999 | LIVE"], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT'],
       [28, 29, 'https://youtube.com/', 'Stream Fifteen'], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=tEQFpeVtg9yJ6uJA', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE"]
     ] },
-    { title: '1/8 финала', format: 'BO1', matches: Array(8).fill(null) },
+    { title: '1/8 финала', format: 'BO1', matches: [null, null, null, null, null, [null, 23], [null, 26], null] },
     { title: '1/4 финала', format: 'BO1', matches: Array(4).fill(null) },
     { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
     { title: 'Финал', format: 'BO3', matches: [null] }
@@ -46,7 +46,7 @@ const tournamentData = {
     ['-!-SUNRISE-!-', '!VOlCAN!'], ['BENZIN', 'DAUD_77'],
     ['-BATKEN-', 'Guten tag'], ['FREEDOM.113', 'Vincenzo_1999'],
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER'], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME'],
-    ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK'], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
+    ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
     ['sakasi997', 'condantoico'], ['-True Freedom-', 'Yamito012 R'],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01'],

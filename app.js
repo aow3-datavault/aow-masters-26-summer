@@ -11,9 +11,9 @@ const iconUrl = value => `icons/${encodeURIComponent(value.replace(/\.+$/, ''))}
 let language = 'ru';
 let t = translations[language];
 
-const playerMarkup = player => {
+const playerMarkup = (player, score = 0, isEliminated = false) => {
   if (!player) return `<div class="player player-empty"><span class="avatar ghost-avatar"></span><span class="player-name">${t.waiting}</span><b class="player-score">0</b></div>`;
-  return `<div class="player player-${player.faction}${player.isEliminated ? ' is-eliminated' : ''}"><img class="avatar" src="${iconUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">${player.score}</b></div>`;
+  return `<div class="player player-${player.faction}${isEliminated ? ' is-eliminated' : ''}"><img class="avatar" src="${iconUrl(player.name)}" alt="" /><span class="player-copy"><span class="player-name">${player.name}</span><span class="clan-name">${player.clan}</span></span><b class="player-score">${score}</b></div>`;
 };
 
 const participant = value => typeof value === 'number' ? tournamentData.players[value] : value;
@@ -21,8 +21,11 @@ const participant = value => typeof value === 'number' ? tournamentData.players[
 const matchMarkup = (match, roundIndex) => {
   const isFirst = roundIndex === 0;
   const players = match ? [participant(match[0]), participant(match[1])] : [null, null];
+  const result = match?.[4] || {};
+  const scores = result.scores || [0, 0];
+  const eliminated = result.eliminated || [false, false];
   const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span>LIVE</span>${match[3]}</a>` : '';
-  return `<article class="match ${isFirst ? 'qualifying-match ' : ''}${stream ? 'has-stream' : 'no-stream'}">${playerMarkup(players[0])}${playerMarkup(players[1])}${stream}</article>`;
+  return `<article class="match ${isFirst ? 'qualifying-match ' : ''}${stream ? 'has-stream' : 'no-stream'}">${playerMarkup(players[0], scores[0], eliminated[0])}${playerMarkup(players[1], scores[1], eliminated[1])}${stream}</article>`;
 };
 
 const renderBracket = () => {

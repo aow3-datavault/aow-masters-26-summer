@@ -47,7 +47,7 @@ const renderBracket = () => {
 const renderRanking = () => {
   document.querySelector('#ranking-content').innerHTML = `
     <div class="ranking-head">${t.rankingHeaders.map(header => `<span>${header}</span>`).join('')}</div>
-    ${tournamentData.ranking.map((entry, index) => `<div class="ranking-row">
+    ${tournamentData.ranking.toSorted((a, b) => b.points - a.points).map((entry, index) => `<div class="ranking-row">
       <span class="rank">${String(index + 1).padStart(2, '0')}</span>
       <span class="clan"><img src="${iconUrl(entry.clan)}" alt="" /><b>${entry.clan}</b></span>
       <span class="representatives">${entry.players.join(' · ')}</span>

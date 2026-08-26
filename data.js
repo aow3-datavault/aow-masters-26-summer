@@ -21,7 +21,7 @@ const tournamentData = {
     { title: '1/16 финала', format: 'BO1', matches: [
       [0, 1, 'https://twitch.tv/', 'Stream One'], [2, 3, 'https://www.youtube.com/live/Aw7cqsHh4jQ?si=ekK8VR0wev6x1NLO', 'White Pigeon vs VT_TaptapBoi C AOW3 MASTERS TOURNAMENT'],
       [4, 5, 'https://youtube.com/', 'Stream Three'], [6, 7, 'https://www.youtube.com/live/5gf9opwOKsA?si=Taid-F8OB9JwEo5_', "ART OF WAR MASTERS '26 SUMMER | Yamitoo12 R vs General-Hassan .AS7 | LIVE"],
-      [8, 9, 'https://youtube.com/', 'Stream Five'], [10, 11, 'https://twitch.tv/', 'Stream Six'],
+      [8, 9, 'https://youtube.com/', 'Stream Five'], [10, 11, 'https://www.youtube.com/live/Lx3E8iyQlRw?si=4s4Xi1hfi7qIcIu5', 'GeaveDigger!!! Vs VANGUARD TEAM AOW3 MASTERS TOURNAMENT'],
       [12, 13, 'https://www.youtube.com/live/H77cRTTNz14?si=P0QaHe_eILJpE70R', 'Monirul Vs Mosina AOW3 MASTERS TOURNAMENT'], [14, 15, 'https://twitch.tv/', 'Stream Eight'],
       [16, 17, 'https://youtube.com/', 'Stream Nine'], [18, 19, 'https://twitch.tv/', 'Stream Ten'],
       [20, 21, 'https://youtube.com/', 'Stream Eleven'], [22, 23, 'https://www.youtube.com/live/JA-cf4V2Z8w?si=puyJUc9Jvqc3Tjnd', "!'DOOM-BRINGER'! vs ALTAIR_SON_OF_DARK AOW3 MASTERS TOURNAMENT"],

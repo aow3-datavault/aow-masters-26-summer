@@ -5,7 +5,7 @@ const tournamentData = {
     ['Supreme Deadass', '!SUPREME_WARRIORS!', 'confederation'], ['DAUD_77', 'BENZIN', 'resistance'],
     ['General-Hassan.AS7', '120 FPS', 'confederation'], ['Yamito012 R', '-True Freedom-', 'resistance'],
     ['Koroleva Zadrot', 'Forge of Souls', 'confederation'], ['Amaan6', 'The lion heart', 'resistance'],
-    ['VANGUARD TEAM', 'Peace for everyone', 'confederation'], ['Real Cat God', 'yuanshen', 'resistance'],
+    ['VANGUARD TEAM', 'Peace for everyone', 'confederation'], ['GraveDigger!!!', 'Crescent Clan', 'resistance'],
     ['Mosina', 'KTO_ESLI_NE_MI', 'confederation'], ['Monirul', 'R-U-SS-K-I-E', 'resistance'],
     ['Tairitsu', 'Tianya Alliance', 'confederation'], ['kinghall', '', 'resistance'],
     ['!VOlCAN!', '-!-SUNRISE-!-', 'confederation'], ['colver_1672142468', 'Russian princes', 'resistance'],
@@ -50,7 +50,7 @@ const tournamentData = {
     ['sakasi997', 'condantoico'], ['-True Freedom-', 'Yamito012 R'],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01'],
-    ['HELLAS ELITE', 'for a good world'], ['yuanshen', 'Real Cat God']
+    ['HELLAS ELITE', 'for a good world'], ['Crescent Clan', 'GraveDigger!!!']
   ].map(([clan, player, points = 0]) => ({ clan, points, players: [player] })),
   points: [
     ['1-е место', 16], ['2-е место', 12], ['3-е место', 9], ['4-е место', 7],

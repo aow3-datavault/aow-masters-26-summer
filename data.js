@@ -26,7 +26,7 @@ const tournamentData = {
       [16, 17, 'https://youtube.com/', 'Stream Nine'], [18, 19, 'https://twitch.tv/', 'Stream Ten'],
       [20, 21, 'https://youtube.com/', 'Stream Eleven'], [22, 23, 'https://www.youtube.com/live/JA-cf4V2Z8w?si=puyJUc9Jvqc3Tjnd', "!'DOOM-BRINGER'! vs ALTAIR_SON_OF_DARK AOW3 MASTERS TOURNAMENT"],
       [24, 25, 'https://www.youtube.com/live/vAg12-ZlgSc?si=aQqbUn4un12-8PQ1', "ART OF WAR MASTERS '26 SUMMER | Condantoica vs Vincenzo_1999 | LIVE"], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT'],
-      [28, 29, 'https://youtube.com/', 'Stream Fifteen'], [30, 31, 'https://twitch.tv/', 'Stream Sixteen']
+      [28, 29, 'https://youtube.com/', 'Stream Fifteen'], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=tEQFpeVtg9yJ6uJA', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE"]
     ] },
     { title: '1/8 финала', format: 'BO1', matches: Array(8).fill(null) },
     { title: '1/4 финала', format: 'BO1', matches: Array(4).fill(null) },

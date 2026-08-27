@@ -26,8 +26,9 @@ const matchMarkup = (match, roundIndex) => {
   const eliminated = result.eliminated || [false, false];
   const resultLabel = result.status ? t.results[result.status] : '';
   const status = resultLabel ? `<span class="match-status">${resultLabel}</span>` : '';
-  const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span>LIVE</span>${match[3]}</a>` : '';
-  return `<article class="match ${isFirst ? 'qualifying-match ' : ''}${stream ? 'has-stream' : 'no-stream'}">${playerMarkup(players[0], scores[0], eliminated[0])}${playerMarkup(players[1], scores[1], eliminated[1])}${status}${stream}</article>`;
+  const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span${resultLabel ? ' class="match-status"' : ''}>${resultLabel || 'LIVE'}</span>${match[3]}</a>` : '';
+  const standaloneStatus = stream ? '' : status;
+  return `<article class="match ${isFirst ? 'qualifying-match ' : ''}${stream ? 'has-stream' : 'no-stream'}">${playerMarkup(players[0], scores[0], eliminated[0])}${playerMarkup(players[1], scores[1], eliminated[1])}${standaloneStatus}${stream}</article>`;
 };
 
 const renderBracket = () => {

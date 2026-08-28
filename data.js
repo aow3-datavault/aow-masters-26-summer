@@ -20,15 +20,15 @@ const tournamentData = {
   rounds: [
     { title: '1/16 финала', format: 'BO1', matches: [
       [0, 1, 'https://www.youtube.com/live/P23OuOC2X9o?si=PHeTKjVix1u8znl4', "ART OF WAR MASTERS '26 SUMMER | -!..zAKIR AFG..!- vs Hero Dominator | LIVE", { scores: [1, 0], eliminated: [false, true] }], [2, 3, 'https://www.youtube.com/live/Aw7cqsHh4jQ?si=ekK8VR0wev6x1NLO', 'White Pigeon vs VT_TaptapBoi C AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }],
-      [4, 5, 'https://youtube.com/', 'Stream Three'], [6, 7, 'https://www.youtube.com/live/Vwn4QwIPGhQ?si=t-aVEcr7A6rI_is6', 'AOW Masters: General-Hassan.AS7 VS Yamito012 R', { scores: [0, 1], eliminated: [true, false] }],
+      [4, 5, 'https://www.youtube.com/watch?v=ZmVzfRHFdes', '-_ S E Z A R _- VS DAUD_77 AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [6, 7, 'https://www.youtube.com/live/Vwn4QwIPGhQ?si=t-aVEcr7A6rI_is6', 'AOW Masters: General-Hassan.AS7 VS Yamito012 R', { scores: [0, 1], eliminated: [true, false] }],
       [8, 9, 'https://www.youtube.com/live/74TbT8-9lfk?si=o4yOW38ffbEM3A8f', 'Koroleva Zadrot VS Amaan6 AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [10, 11, 'https://www.youtube.com/live/Lx3E8iyQlRw?si=4s4Xi1hfi7qIcIu5', 'GeaveDigger!!! Vs VANGUARD TEAM AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }],
       [12, 13, 'https://www.youtube.com/live/H77cRTTNz14?si=P0QaHe_eILJpE70R', 'Monirul Vs Mosina AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [14, 15, 'https://www.youtube.com/live/isMbM1-cIu0?si=AQLMTkwNYUVOKq7F', 'kinghall VS Tairitsu AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true], status: 'technicalLoss' }],
-      [16, 17, 'https://www.youtube.com/live/5EaiA5dYR4g?si=lROz9gJnWgwwG2Sb', '!VOlCAN! VS colver_1672142468 AOW3 MASTERS TOURNAMENT'], [18, 19, 'https://www.youtube.com/live/gOk8OfqL8DA?si=npERgeN2iA3CYAQu', 'PiscesBrain YT VS Guten tag AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }],
+      [16, 17, 'https://www.youtube.com/live/5EaiA5dYR4g?si=lROz9gJnWgwwG2Sb', '!VOlCAN! VS colver_1672142468 AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [18, 19, 'https://www.youtube.com/live/gOk8OfqL8DA?si=npERgeN2iA3CYAQu', 'PiscesBrain YT VS Guten tag AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }],
       [20, 21, 'https://www.youtube.com/live/ui0RwxQ7ymA?si=Vv3ASKTZTQtCkcWO', '_D.A.R.K_HUNTER VS VOIN--01 AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [22, 23, 'https://www.youtube.com/live/JA-cf4V2Z8w?si=puyJUc9Jvqc3Tjnd', "!'DOOM-BRINGER'! vs ALTAIR_SON_OF_DARK AOW3 MASTERS TOURNAMENT", { scores: [0, 1], eliminated: [true, false] }],
-      [24, 25, 'https://www.youtube.com/live/vAg12-ZlgSc?si=aQqbUn4un12-8PQ1', "ART OF WAR MASTERS '26 SUMMER | Condantoica vs Vincenzo_1999 | LIVE"], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }],
-      [28, 29, 'https://youtube.com/', 'Stream Fifteen'], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
+      [24, 25, 'https://www.youtube.com/live/vAg12-ZlgSc?si=aQqbUn4un12-8PQ1', "ART OF WAR MASTERS '26 SUMMER | Condantoica vs Vincenzo_1999 | LIVE", { scores: [0, 1], eliminated: [true, false] }], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }],
+      [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT'], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
-    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [null, 7, null, null, { scores: [0, 0] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [0, 0] }], [null, 19, null, null, { scores: [0, 0] }], [20, 23, null, null, { scores: [0, 0] }], [null, 26, null, null, { scores: [0, 0] }], [null, 31, null, null, { scores: [0, 0] }]] },
+    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [4, 7, null, null, { scores: [0, 0] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [0, 0] }], [16, 19, null, null, { scores: [0, 0] }], [20, 23, null, null, { scores: [0, 0] }], [25, 26, null, null, { scores: [0, 0] }], [null, 31, null, null, { scores: [0, 0] }]] },
     { title: '1/4 финала', format: 'BO1', matches: Array(4).fill(null) },
     { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
     { title: 'Финал', format: 'BO3', matches: [null] }
@@ -43,11 +43,11 @@ const tournamentData = {
     ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
     ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468'],
     ['Tianya Alliance', 'Tairitsu'],
-    ['-!-SUNRISE-!-', '!VOlCAN!'], ['BENZIN', 'DAUD_77'],
+    ['-!-SUNRISE-!-', '!VOlCAN!', 1], ['BENZIN', 'DAUD_77', 1],
     ['-BATKEN-', 'Guten tag', 1], ['FREEDOM.113', 'Vincenzo_1999'],
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER'], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME'],
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
-    ['sakasi997', 'condantoico'], ['-True Freedom-', 'Yamito012 R'],
+    ['sakasi997', 'condantoico', 1], ['-True Freedom-', 'Yamito012 R'],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01', 1],
     ['HELLAS ELITE', 'for a good world', 1], ['Crescent Clan', 'GraveDigger!!!']

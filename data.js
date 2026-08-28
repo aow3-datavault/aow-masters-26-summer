@@ -28,7 +28,7 @@ const tournamentData = {
       [24, 25, 'https://youtu.be/vY8wXG8bgy4', 'Vincenzo_1999 VS condantoico AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }],
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT'], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
-    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [4, 7, null, null, { scores: [0, 0] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [0, 0] }], [16, 19, null, null, { scores: [0, 0] }], [20, 23, null, null, { scores: [0, 0] }], [25, 26, null, null, { scores: [0, 0] }], [null, 31, null, null, { scores: [0, 0] }]] },
+    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [4, 7, null, null, { scores: [0, 0] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [0, 0] }], [17, 19, null, null, { scores: [0, 0] }], [20, 23, null, null, { scores: [0, 0] }], [25, 26, null, null, { scores: [0, 0] }], [null, 31, null, null, { scores: [0, 0] }]] },
     { title: '1/4 финала', format: 'BO1', matches: Array(4).fill(null) },
     { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
     { title: 'Финал', format: 'BO3', matches: [null] }

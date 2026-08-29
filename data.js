@@ -29,15 +29,15 @@ const tournamentData = {
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
     { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
-    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [0, 0] }], [8, 12, null, null, { scores: [0, 0] }], [19, 23, null, null, { scores: [0, 0] }], [26, 29, null, null, { scores: [0, 0] }]] },
-    { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
+    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [0, 0] }], [26, 29, null, null, { scores: [0, 0] }]] },
+    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 0] }], null] },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
   ranking: [
     ['Call Me God', 'Hero Dominator', 2], ['-VERDIKT-.', 'Hexblood !!!! ha', 1],
     ['-V.E.R.T.E.X-', 'VT_TaptapBoi C', 1], ['The lion heart', 'Amaan6', 1],
-    ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT'],
+    ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT', 2],
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],
     ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
     ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
@@ -47,7 +47,7 @@ const tournamentData = {
     ['-BATKEN-', 'Guten tag', 1], ['FREEDOM.113', 'Vincenzo_1999', 1],
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER', 2], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME', 2],
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
-    ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R'],
+    ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R', 2],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01', 1],
     ['HELLAS ELITE', 'for a good world', 1], ['Crescent Clan', 'GraveDigger!!!', 2]

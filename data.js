@@ -28,8 +28,8 @@ const tournamentData = {
       [24, 25, 'https://youtu.be/vY8wXG8bgy4', 'Vincenzo_1999 VS condantoico AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }],
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
-    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 0] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
-    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [0, 0] }], [8, 12, null, null, { scores: [0, 0] }], [19, 23, null, null, { scores: [0, 0] }], [null, 29, null, null, { scores: [0, 0] }]] },
+    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
+    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [0, 0] }], [8, 12, null, null, { scores: [0, 0] }], [19, 23, null, null, { scores: [0, 0] }], [26, 29, null, null, { scores: [0, 0] }]] },
     { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
@@ -45,7 +45,7 @@ const tournamentData = {
     ['Tianya Alliance', 'Tairitsu', 2],
     ['-!-SUNRISE-!-', '!VOlCAN!', 1], ['BENZIN', 'DAUD_77', 1],
     ['-BATKEN-', 'Guten tag', 1], ['FREEDOM.113', 'Vincenzo_1999', 1],
-    ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER', 2], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME'],
+    ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER', 2], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME', 2],
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
     ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R'],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],

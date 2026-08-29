@@ -37,7 +37,7 @@ const tournamentData = {
   ranking: [
     ['Call Me God', 'Hero Dominator', 2], ['-VERDIKT-.', 'Hexblood !!!! ha', 1],
     ['-V.E.R.T.E.X-', 'VT_TaptapBoi C', 1], ['The lion heart', 'Amaan6', 1],
-    ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT', 2],
+    ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT', 4],
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],
     ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
     ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
@@ -47,7 +47,7 @@ const tournamentData = {
     ['-BATKEN-', 'Guten tag', 1], ['FREEDOM.113', 'Vincenzo_1999', 1],
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER', 2], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME', 2],
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
-    ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R', 2],
+    ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R', 4],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01', 1],
     ['HELLAS ELITE', 'for a good world', 1], ['Crescent Clan', 'GraveDigger!!!', 2]

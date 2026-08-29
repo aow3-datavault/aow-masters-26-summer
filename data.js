@@ -28,14 +28,14 @@ const tournamentData = {
       [24, 25, 'https://youtu.be/vY8wXG8bgy4', 'Vincenzo_1999 VS condantoico AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }],
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
-    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 0] }], [29, 24, null, null, { scores: [0, 0] }]] },
-    { title: '1/4 финала', format: 'BO1', matches: [[null, 7, null, null, { scores: [0, 0] }], [null, 12, null, null, { scores: [0, 0] }], [19, 23, null, null, { scores: [0, 0] }], null] },
+    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 0] }], [29, 24, null, null, { scores: [0, 0] }]] },
+    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [0, 0] }], [null, 12, null, null, { scores: [0, 0] }], [19, 23, null, null, { scores: [0, 0] }], null] },
     { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
   ranking: [
-    ['Call Me God', 'Hero Dominator'], ['-VERDIKT-.', 'Hexblood !!!! ha', 1],
+    ['Call Me God', 'Hero Dominator', 2], ['-VERDIKT-.', 'Hexblood !!!! ha', 1],
     ['-V.E.R.T.E.X-', 'VT_TaptapBoi C', 1], ['The lion heart', 'Amaan6', 1],
     ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT'],
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],

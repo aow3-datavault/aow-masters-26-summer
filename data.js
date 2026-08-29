@@ -29,8 +29,8 @@ const tournamentData = {
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
     { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
-    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [0, 0] }], [26, 29, null, null, { scores: [0, 0] }]] },
-    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 0] }], null] },
+    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [1, 0], eliminated: [false, true] }], [26, 29, null, null, { scores: [0, 0] }]] },
+    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 0] }], [19, null, null, null, { scores: [0, 0] }]] },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
@@ -40,7 +40,7 @@ const tournamentData = {
     ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT', 4],
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],
     ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
-    ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
+    ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!", 4],
     ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468', 2],
     ['Tianya Alliance', 'Tairitsu', 2],
     ['-!-SUNRISE-!-', '!VOlCAN!', 1], ['BENZIN', 'DAUD_77', 1],

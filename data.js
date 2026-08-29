@@ -28,8 +28,8 @@ const tournamentData = {
       [24, 25, 'https://youtu.be/vY8wXG8bgy4', 'Vincenzo_1999 VS condantoico AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }], [26, 27, 'https://www.youtube.com/live/uenpsGpp-C8?si=tDxGAhSbgHzCS6LI', 'DEVIL_MAY_CRY VS Hexblood !!!! AOW3 MASTERS TOURNAMENT', { scores: [1, 0], eliminated: [false, true] }],
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
-    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [4, 7, null, null, { scores: [0, 0] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 0] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 0] }], [29, 24, null, null, { scores: [0, 0] }]] },
-    { title: '1/4 финала', format: 'BO1', matches: [null, [null, 12, null, null, { scores: [0, 0] }], [null, 23, null, null, { scores: [0, 0] }], null] },
+    { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 0] }], [4, 7, null, null, { scores: [0, 0] }], [8, 11, null, null, { scores: [0, 0] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 0] }], [29, 24, null, null, { scores: [0, 0] }]] },
+    { title: '1/4 финала', format: 'BO1', matches: [null, [null, 12, null, null, { scores: [0, 0] }], [19, 23, null, null, { scores: [0, 0] }], null] },
     { title: 'Полуфинал', format: 'BO3', matches: Array(2).fill(null) },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
@@ -41,7 +41,7 @@ const tournamentData = {
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],
     ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
     ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
-    ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468'],
+    ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468', 2],
     ['Tianya Alliance', 'Tairitsu', 2],
     ['-!-SUNRISE-!-', '!VOlCAN!', 1], ['BENZIN', 'DAUD_77', 1],
     ['-BATKEN-', 'Guten tag', 1], ['FREEDOM.113', 'Vincenzo_1999', 1],

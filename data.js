@@ -29,8 +29,8 @@ const tournamentData = {
       [28, 29, 'https://www.youtube.com/live/9UTym9at8CU?si=ERuiwkztnjf4dMXu', '-_- pathmaker Vs DuskWell-Shark AOW3 MASTERS TOURNAMENT', { scores: [0, 1], eliminated: [true, false] }], [30, 31, 'https://www.youtube.com/live/x0Jg_VBzZHY?si=_eoXAcZAhDp2zabi', "ART OF WAR MASTERS '26 SUMMER | For A Good World vs ACCPHU.RELAXWITHME | LIVE", { scores: [0, 1], eliminated: [true, false] }]
     ] },
     { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
-    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [1, 0], eliminated: [false, true] }], [26, 29, null, null, { scores: [0, 0] }]] },
-    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 0] }], [19, null, null, null, { scores: [0, 0] }]] },
+    { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [1, 0], eliminated: [false, true] }], [26, 29, null, null, { scores: [0, 1], eliminated: [true, false] }]] },
+    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 0] }], [19, 29, null, null, { scores: [0, 0] }]] },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
@@ -48,7 +48,7 @@ const tournamentData = {
     ['RUSSIAN STEEL.', '_D.A.R.K_HUNTER', 2], ['CAOTHU-!-CAOCAOTHU', 'ACCPHU.RELAXWITHME', 2],
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
     ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R', 4],
-    ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY'],
+    ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY', 4],
     ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01', 1],
     ['HELLAS ELITE', 'for a good world', 1], ['Crescent Clan', 'GraveDigger!!!', 2]
   ].map(([clan, player, points = 0]) => ({ clan, points, players: [player] })),

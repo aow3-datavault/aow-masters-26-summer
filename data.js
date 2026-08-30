@@ -49,7 +49,7 @@ const tournamentData = {
     ['_THE_KONFA_', 'ALTAIR_SON_OF_DARK', 1], ['W.O.R.L.D.C.O.R.P.', '-_- pathmaker'],
     ['sakasi997', 'condantoico', 2], ['-True Freedom-', 'Yamito012 R', 4],
     ['_RaKi-Na-KoNfE_', 'DEVIL_MAY_CRY', 4],
-    ['-EAGLES-', 'DuskWell-Shark'], ['PARNI IZ STALI', 'VOIN--01', 1],
+    ['-EAGLES-', 'DuskWell-Shark', 1], ['PARNI IZ STALI', 'VOIN--01', 1],
     ['HELLAS ELITE', 'for a good world', 1], ['Crescent Clan', 'GraveDigger!!!', 2]
   ].map(([clan, player, points = 0]) => ({ clan, points, players: [player] })),
   points: [

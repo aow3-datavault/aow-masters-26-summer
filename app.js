@@ -24,9 +24,11 @@ const matchMarkup = (match, roundIndex) => {
   const result = match?.[4] || {};
   const scores = result.scores || [0, 0];
   const eliminated = result.eliminated || [false, false];
-  const resultLabel = result.status ? t.results[result.status] : '';
-  const status = resultLabel ? `<span class="match-status">${resultLabel}</span>` : '';
-  const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span${resultLabel ? ' class="match-status"' : ''}>${resultLabel || 'LIVE'}</span>${match[3]}</a>` : '';
+  const resultLabel = result.status === 'technicalSubstitution' ? (language === 'ru' ? 'Замена по технической причине' : 'Technical substitution') : result.status ? t.results[result.status] : '';
+  const replacedPlayer = result.replacedPlayer === undefined ? null : participant(result.replacedPlayer);
+  const statusLabel = resultLabel && replacedPlayer ? `${resultLabel}: ${replacedPlayer.name}` : resultLabel;
+  const status = statusLabel ? `<span class="match-status">${statusLabel}</span>` : '';
+  const stream = match?.[2] ? `<a class="stream-link" href="${match[2]}" target="_blank" rel="noreferrer"><span${statusLabel ? ' class="match-status"' : ''}>${statusLabel || 'LIVE'}</span>${match[3]}</a>` : '';
   const standaloneStatus = stream ? '' : status;
   return `<article class="match ${isFirst ? 'qualifying-match ' : ''}${stream ? 'has-stream' : 'no-stream'}">${playerMarkup(players[0], scores[0], eliminated[0])}${playerMarkup(players[1], scores[1], eliminated[1])}${standaloneStatus}${stream}</article>`;
 };

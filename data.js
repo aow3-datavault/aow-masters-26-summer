@@ -30,8 +30,8 @@ const tournamentData = {
     ] },
     { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
     { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [1, 0], eliminated: [false, true] }], [26, 29, null, null, { scores: [0, 1], eliminated: [true, false] }]] },
-    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 1] }], [19, 29, null, null, { scores: [0, 0] }]] },
-    { title: 'Финал', format: 'BO3', matches: [null] }
+    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 2], eliminated: [true, false] }], [23, 29, null, null, { scores: [0, 0], status: 'technicalSubstitution', replacedPlayer: 19 }]] },
+    { title: 'Финал', format: 'BO3', matches: [[8, null, null, null, { scores: [0, 0] }]] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },
   ranking: [
@@ -41,7 +41,7 @@ const tournamentData = {
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],
     ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon'],
     ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!", 4],
-    ['KTO_ESLI_NE_MI', 'Mosina'], ['Russian princes', 'colver_1672142468', 2],
+    ['KTO_ESLI_NE_MI', 'Mosina', 4], ['Russian princes', 'colver_1672142468', 2],
     ['Tianya Alliance', 'Tairitsu', 2],
     ['-!-SUNRISE-!-', '!VOlCAN!', 1], ['BENZIN', 'DAUD_77', 1],
     ['-BATKEN-', 'Guten tag', 1], ['FREEDOM.113', 'Vincenzo_1999', 1],

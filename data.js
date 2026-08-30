@@ -30,7 +30,7 @@ const tournamentData = {
     ] },
     { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
     { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [1, 0], eliminated: [false, true] }], [26, 29, null, null, { scores: [0, 1], eliminated: [true, false] }]] },
-    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 0] }], [19, 29, null, null, { scores: [0, 0] }]] },
+    { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 1] }], [19, 29, null, null, { scores: [0, 0] }]] },
     { title: 'Финал', format: 'BO3', matches: [null] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1' },

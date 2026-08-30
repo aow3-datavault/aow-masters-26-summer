@@ -40,7 +40,7 @@ const renderBracket = () => {
       <div class="playoff-matches">${round.matches.map(match => matchMarkup(match, index)).join('')}</div>
     </section>`).join('');
   const final = tournamentData.rounds.at(-1);
-  const finalStage = `<section class="playoff-round playoff-round-4 final-stage"><header><h3>${t.rounds[final.title]}</h3><span>${final.format}</span></header><div class="playoff-matches">${final.matches.map(match => matchMarkup(match, 4)).join('')}</div><section class="third-place"><header><h3>${t.rounds[tournamentData.thirdPlace.title]}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(null, 4)}</div></section></section>`;
+  const finalStage = `<section class="playoff-round playoff-round-4 final-stage"><header><h3>${t.rounds[final.title]}</h3><span>${final.format}</span></header><div class="playoff-matches">${final.matches.map(match => matchMarkup(match, 4)).join('')}</div><section class="third-place"><header><h3>${t.rounds[tournamentData.thirdPlace.title]}</h3><span>${tournamentData.thirdPlace.format}</span></header><div class="playoff-matches">${matchMarkup(tournamentData.thirdPlace.match, 4)}</div></section></section>`;
   const sourceCenters = Array.from({ length: 8 }, (_, index) => 66 + index * 126);
   const quarterCenters = Array.from({ length: 4 }, (_, index) => 129 + index * 252);
   const semiCenters = [255, 759];

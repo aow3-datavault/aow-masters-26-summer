@@ -31,7 +31,7 @@ const tournamentData = {
     { title: '1/8 финала', format: 'BO1', matches: [[0, 3, null, null, { scores: [0, 1], eliminated: [true, false] }], [4, 7, null, null, { scores: [0, 1], eliminated: [true, false] }], [8, 11, null, null, { scores: [1, 0], eliminated: [false, true] }], [12, 14, null, null, { scores: [1, 0], eliminated: [false, true] }], [17, 19, null, null, { scores: [0, 1], eliminated: [true, false] }], [20, 23, null, null, { scores: [0, 1], eliminated: [true, false] }], [31, 26, null, null, { scores: [0, 1], eliminated: [true, false] }], [29, 24, null, null, { scores: [1, 0], eliminated: [false, true] }]] },
     { title: '1/4 финала', format: 'BO1', matches: [[3, 7, null, null, { scores: [1, 0], eliminated: [false, true] }], [8, 12, null, null, { scores: [1, 0], eliminated: [false, true] }], [19, 23, null, null, { scores: [1, 0], eliminated: [false, true] }], [26, 29, null, null, { scores: [0, 1], eliminated: [true, false] }]] },
     { title: 'Полуфинал', format: 'BO3', matches: [[3, 8, null, null, { scores: [0, 2], eliminated: [true, false] }], [23, 29, null, null, { scores: [2, 0], eliminated: [false, true], status: 'technicalSubstitution', replacedPlayer: 19 }]] },
-    { title: 'Финал', format: 'BO3', matches: [[8, 23, null, null, { scores: [0, 0] }]] }
+    { title: 'Финал', format: 'BO3', matches: [[8, 23, null, null, { scores: [2, 0], eliminated: [false, true] }]] }
   ],
   thirdPlace: { title: 'Матч за 3-е место', format: 'BO1', match: [29, 3, null, null, { scores: [0, 1], eliminated: [true, false] }] },
   ranking: [
@@ -39,8 +39,8 @@ const tournamentData = {
     ['-V.E.R.T.E.X-', 'VT_TaptapBoi C', 1], ['The lion heart', 'Amaan6', 1],
     ['SCARY FIGHTERS', '-_ S E Z A R _-', 2], ['_.--! Q.A.D !--._', 'PiscesBrain YT', 4],
     ['120 FPS', 'General-Hassan.AS7', 1], ['R-U-SS-K-I-E', 'Monirul', 1],
-    ['Forge of Souls', 'Koroleva Zadrot'], ['Utility Pigeon', 'White Pigeon', 9],
-    ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!"],
+    ['Forge of Souls', 'Koroleva Zadrot', 16], ['Utility Pigeon', 'White Pigeon', 9],
+    ['Peace for everyone', 'VANGUARD TEAM', 1], ['-B.E.A.S.T-', "!'DOOM-BRINGER'!", 12],
     ['KTO_ESLI_NE_MI', 'Mosina', 4], ['Russian princes', 'colver_1672142468', 2],
     ['Tianya Alliance', 'Tairitsu', 2],
     ['-!-SUNRISE-!-', '!VOlCAN!', 1], ['BENZIN', 'DAUD_77', 1],
